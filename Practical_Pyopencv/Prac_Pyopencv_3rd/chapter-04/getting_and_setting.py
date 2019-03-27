@@ -30,11 +30,11 @@ print("Pixel at (0, 0) - Red: {}, Green: {}, Blue: {}".format(r, g, b))
 # Since we are using NumPy arrays, we can apply slicing and
 # grab large chunks of the image. Let's grab the top-left
 # corner
-corner = image[0:100, 0:100]
+corner = image[20:100, 20:100]
 cv2.imshow("Corner", corner)
 
 # Let's make the top-left corner of the image green
-image[0:100, 0:100] = (0, 255, 0)
+image[20:100, 20:100] = (0, 255, 0)
 
 # Show our updated image
 cv2.imshow("Updated", image)
